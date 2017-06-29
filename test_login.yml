@@ -2,10 +2,10 @@
 test_login:
   - input:
     - uid: user_name_login-inputEl
-    - content: admin
+    - content: user
   - input:
     - uid: user_password_login-inputEl
-    - content: paloalto
+    - content: password
   - click:
     - driver: container-1012-innerCt
     - uid: submit_login
