@@ -1,0 +1,48 @@
+#test_login.yml
+test_login:
+  - input:
+    - uid: user_name_login-inputEl
+    - content: admin
+  - input:
+    - uid: user_password_login-inputEl
+    - content: paloalto
+  - click:
+    - driver: container-1012-innerCt
+    - uid: submit_login
+
+test_dev_tab:
+  - click:
+    - uid: tab-1292
+
+test_add:
+  - click:
+    - uid: tool-3908
+  - input:
+    - uid: devicename_readonly-inputEl
+    - content: DevName
+  - input:
+    - uid: combo-3917-inputEl
+    - content: vm-series
+  - input:
+    - uid: textfield-3919-inputEl
+    - content: 10.5.174.102
+  - input:
+    - uid: textfield-3922-inputEl
+    - content: 0007SE00225
+  - click:
+    - uid: device_update_button
+
+test_remove:
+  - click:
+    - driver: gridview-1102-record-860
+    - uid_type: CLASS_NAME
+    - uid: x-action-col-1
+  - click:
+    - driver: messagebox-1001-toolbar
+    - uid: button-1006
+
+test_logout:
+  - click:
+    - uid: username_button
+  - click:
+    - uid: menuitem-3892-itemEl
